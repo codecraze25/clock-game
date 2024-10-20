@@ -1,108 +1,104 @@
 div {
-    box-sizing: content-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: content-box;
+  padding: 0;
+  margin: 0;
 }
 
 .container_puzzle {
-    width: 650px;
-    height: 650px;
-    margin: auto;
-    /* border: dotted 1px black; */
-    line-height: 0px;
-    /* remove space between two div rows */
+  width: 650px;
+  height: 650px;
+  margin: auto;
+  /* border: dotted 1px black; */
+  line-height: 0px;
+  /* remove space between two div rows */
 }
 
 #score {
-    text-align: center;
-    font-size: 40px;
+  text-align: center;
+  font-size: 40px;
 }
 
-
 #level {
-    text-align: center;
-    font-size: 50px;
+  text-align: center;
+  font-size: 50px;
 }
 
 .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 30px;
-    gap: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  gap: 30px;
 }
 
 .btn {
-    text-align: center;
-    font-size: 50px;
-    padding: 12px 30px;
-    background-color: #95a5a6;
+  text-align: center;
+  font-size: 50px;
+  padding: 12px 30px;
+  background-color: #95a5a6;
 }
 
-
 .btn:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .container_pieces {
-    width: 200px;
-    height: 200px;
-    margin-left: 100px;
-    /* padding: 10px; */
-    /* border: dotted 1px black; */
-    position: relative;
+  width: 200px;
+  height: 200px;
+  margin-left: 100px;
+  /* padding: 10px; */
+  /* border: dotted 1px black; */
+  position: relative;
 }
 
 .drop_square,
 .piece_square {
-    display: inline-block;
-    width: 200px;
-    height: 200px;
-    border: dotted 1px black;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  border: dotted 1px black;
 }
 
 img {
-    width: 200px;
-    height: 200px;
-    position: absolute;
+  width: 200px;
+  height: 200px;
+  position: absolute;
 }
 
-
-
 #screen {
-    display: table;
-    min-height: 100%;
-    width: 100%;
-    height: 100%;
-    background: #3498db;
+  display: table;
+  min-height: 100%;
+  width: 100%;
+  height: 100%;
+  background: #3498db;
 }
 
 #screen #sheet {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
 }
 
 #screen #sheet #signo {
-    color: #fff;
-    display: block;
-    margin: 40px 0;
-    font-size: 14px;
-    font-weight: bold;
+  color: #fff;
+  display: block;
+  margin: 40px 0;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .icofreak {
-    display: inline-block;
+  display: inline-block;
 }
 
 .icofreak .body {
-    height: 200px;
-    width: 200px;
-    background: #fff;
-    position: relative;
-    box-shadow: inset 0 0 0 2px #0f3a57;
-    transition: all 120ms linear;
-    transform: scale(1);
+  height: 200px;
+  width: 200px;
+  background: #fff;
+  position: relative;
+  box-shadow: inset 0 0 0 2px #0f3a57;
+  transition: all 120ms linear;
+  transform: scale(1);
 }
 
 /* .icofreak .body:hover {
@@ -110,113 +106,112 @@ img {
 } */
 
 .icofreak .body .axel {
-    height: 20px;
-    width: 20px;
-    /* background: #333; */
-    border-radius: 50%;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+  height: 20px;
+  width: 20px;
+  /* background: #333; */
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .icofreak .body .axel:after {
-    content: "";
-    display: block;
-    position: absolute;
-    z-index: 5;
-    left: 50%;
-    top: 50%;
-    background: #fff;
-    height: 11px;
-    width: 11px;
-    max-width: 20px;
-    max-height: 20px;
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 5;
+  left: 50%;
+  top: 50%;
+  background: #fff;
+  height: 11px;
+  width: 11px;
+  max-width: 20px;
+  max-height: 20px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .icofreak .body .axel .ticker {
-    display: block;
-    position: absolute;
-    background: #95a5a6;
-    width: 10px;
-    left: 4px;
-    bottom: -1px;
-    border-radius: 154px;
-    transition: all 120ms linear;
+  display: block;
+  position: absolute;
+  background: #95a5a6;
+  width: 10px;
+  left: 4px;
+  bottom: -1px;
+  border-radius: 154px;
+  transition: all 120ms linear;
 }
 
 .icofreak .body .axel .ticker.hours {
-    height: 68px;
-    transform-origin: center 58px;
-    transform: rotate(90deg);
-    background: #435957;
-    /* -webkit-animation: rotate-ticker-h 8s linear infinite; */
-    /* animation: rotate-ticker-h 8s linear infinite; */
+  height: 68px;
+  transform-origin: center 58px;
+  transform: rotate(90deg);
+  background: #435957;
+  /* -webkit-animation: rotate-ticker-h 8s linear infinite; */
+  /* animation: rotate-ticker-h 8s linear infinite; */
 }
 
 .icofreak .body .axel .ticker.minutes {
-    height: 80px;
-    transform-origin: center 70px;
-    background: #4e9791;
+  height: 80px;
+  transform-origin: center 70px;
+  background: #4e9791;
 
-    /* transform: rotate(0deg); */
-    /* -webkit-animation: rotate-ticker 2s linear infinite;
+  /* transform: rotate(0deg); */
+  /* -webkit-animation: rotate-ticker 2s linear infinite;
     animation: rotate-ticker 2s linear infinite; */
 }
 
 .icofreak.circle .body {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 @-webkit-keyframes rotate-ticker {
-    0% {
-        transform: rotate(0deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
 
-    100% {
-        transform: rotate(720deg);
-    }
+  100% {
+    transform: rotate(720deg);
+  }
 }
 
 @keyframes rotate-ticker {
-    0% {
-        transform: rotate(0deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
 
-    100% {
-        transform: rotate(720deg);
-    }
+  100% {
+    transform: rotate(720deg);
+  }
 }
 
 @-webkit-keyframes rotate-ticker-h {
-    0% {
-        transform: rotate(90deg);
-    }
+  0% {
+    transform: rotate(90deg);
+  }
 
-    100% {
-        transform: rotate(810deg);
-    }
+  100% {
+    transform: rotate(810deg);
+  }
 }
 
 @keyframes rotate-ticker-h {
-    0% {
-        transform: rotate(90deg);
-    }
+  0% {
+    transform: rotate(90deg);
+  }
 
-    100% {
-        transform: rotate(810deg);
-    }
+  100% {
+    transform: rotate(810deg);
+  }
 }
 
-
 span {
-    font-size: 50px;
+  font-size: 50px;
 }
 
 .footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
